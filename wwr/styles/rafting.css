@@ -75,6 +75,7 @@ h1 {
 }
 
 .hero article {
+    position: absolute;
     color: var(--accent1-color);
     background-color: var(--Primary-color);
 }
