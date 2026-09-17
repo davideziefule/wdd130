@@ -34,6 +34,7 @@ nav,
 p,
 section,
 artcle {
+    color: var(--secondary-color);
     margin: 16px;
     padding: 8px;
 }
