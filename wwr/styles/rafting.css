@@ -26,36 +26,41 @@ footer {
 
 header {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 16px;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
 }
 
 header img {
-    width: 150px;
+    width: 120px;
+    height: auto;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    /* gap: 30px; */
+    justify-content: space-evenly;
     list-style: none;
 }
 
 nav a {
-    color: var(--primary-color);
     text-decoration: none;
+    color: var(--secondary-color);
     font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--accent1-color);
+    border-radius: 5px;
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav,
@@ -66,19 +71,42 @@ article {
     padding: 8px;
 }
 
-.socialmedia {
+section h2 {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* footer {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--primary-color);
+    color: var(--secondary-color)
+} */
+
+footer p {
+    grid-column: 2;
+    text-align: center;
+    white-space: nowrap;
+}
+
+footer nav {
+    grid-column: 3;
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia a img {
-    width: 40px;
-    height: auto;
+    gap: 15px;
 }
 
 .hero {
@@ -94,38 +122,83 @@ article {
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 0;
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
-    opacity: 0.85;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    right: 20px;
-    padding: 15px;
+    right: 50px;
+    left: 50px;
+    padding: 1rem;
     background-color: rgba(255, 255, 255, 0.85);
     color: var(--accent1-color);
 }
 
 .hero article img {
     float: right;
-    width: 125px;
-    margin-left: 15px;
+    width: 150px;
+    margin-left: 1rem;
 }
 
-section h2 {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    padding: 10px;
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 1rem;
+    align-items: center;
 }
 
-footer {
+.history h2 {
+    grid-column: 1 / 4;
     text-align: center;
-    padding: 20px;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.adventures h2 {
+    grid-column: 1 / 6;
+    text-align: center;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.adventures figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 35px;
+    height: auto;
 }
