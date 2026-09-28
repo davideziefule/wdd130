@@ -2,6 +2,7 @@
     --primary-color: #055a05;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
+    --white-color: #fcfcfc;
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -85,17 +86,6 @@ footer {
     color: var(--secondary-color);
 }
 
-/* footer {
-    text-align: center;
-    padding: 20px;
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: var(--primary-color);
-    color: var(--secondary-color)
-} */
-
 footer p {
     grid-column: 2;
     text-align: center;
@@ -135,7 +125,7 @@ footer nav {
     right: 50px;
     left: 50px;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: var(--secondary-color);
     color: var(--accent1-color);
 }
 
