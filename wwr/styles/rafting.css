@@ -51,13 +51,14 @@ header nav a {
 
 nav a {
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--dark-text);
     font-weight: bold;
     padding: 0.5rem 1rem;
 }
 
 nav a:hover {
-    color: var(--accent1-color);
+    background-color: var(--accent1-color);
+    /* color: var(--accent1-color); */
     border-radius: 5px;
 }
 
@@ -113,6 +114,12 @@ footer nav {
 .hero h1 {
     position: absolute;
     top: 20px;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
     width: 100%;
     padding: 1rem;
     text-align: center;
@@ -274,7 +281,7 @@ textarea {
 button {
     margin: 1rem;
     background-color: var(--secondary-color);
-    color: var(--white-color);
+    color: var(--dark-text);
     border: none;
     border-radius: .5rem;
     padding: .75rem;
@@ -320,6 +327,7 @@ form {
     display: block;
     margin: 0 auto;
 }
+
 section {
     margin: 0;
 }
