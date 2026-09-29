@@ -46,7 +46,7 @@ nav ul {
 }
 
 header nav a {
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
 }
 
 nav a {
@@ -57,7 +57,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--accent1-color);
     border-radius: 5px;
 }
 
@@ -296,7 +296,7 @@ form {
 }
 
 #employee-profiles {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
