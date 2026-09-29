@@ -52,7 +52,7 @@ input,
 button,
 select,
 textarea {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 label {
