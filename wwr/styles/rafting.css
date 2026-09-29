@@ -280,8 +280,8 @@ textarea {
 
 button {
     margin: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--dark-text);
+    background-color: var(--primary-color);
+    color: var(--white-color);
     border: none;
     border-radius: .5rem;
     padding: .75rem;
@@ -290,6 +290,7 @@ button {
 
 button:hover {
     background-color: var(--accent1-color);
+    color: var(--white-color);
 }
 
 form {
@@ -297,7 +298,7 @@ form {
     padding: 1rem;
     border: 1px solid var(--dark-text);
     border-radius: .5rem;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     display: grid;
     color: var(--dark-text);
 }
